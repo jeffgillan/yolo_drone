@@ -1,5 +1,7 @@
 ## YOLO Object Detection on MP4 Videos
 
+<img src="/hiker_identify.gif" width=600>
+
 This python code (yolo_drone_slice.ipynb) will do object detection on mp4 videos using the YOLO object detection vision model. The model will try to predict and put bounding boxes on each frame of the video. The output is a new mp4 video with bouding boxes embedded in the video.
 
 This implimentation will take the input video resolution and 'slice' it into smaller image squares (e.g., 640x640 pixels) to do the predictions. Slice is the same thing as crop or tile. 

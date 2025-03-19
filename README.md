@@ -8,7 +8,14 @@ User inputs include the video path, the output path, the model to use, the class
 
 The model used is the YOLOv8 model that has been fine tuned on the [WALDO dataset](https://huggingface.co/StephanST/WALDO30). The dataset itself is not public, but the weights of this fine tuned model are available on Hugging Face. WALDO has been trained to identify 12 different objects. 0 = light vehicle; 1 = person; 2 = building; 3 = Utility pole; 4 = boat; 5 = bike; 6 = container; 7 = truck; 8 = gastank; 10 = digger (construction equipment); 11 = solar panels; 12 = bus. 
 
-The WALDO fine tuned model is available on Hugging Face [here](https://huggingface.co/StephanST/WALDO30/resolve/main/WALDO30_yolov8m_640x640.pt?download=true).
+The WALDO fine tuned model is available on Hugging Face [here](https://huggingface.co/StephanST/WALDO30/resolve/main/WALDO30_yolov8m_640x640.pt?download=true). Download the `pt` file to your local machine. 
+
+Having access to a GPU will significantly increase the speed of the predictions.
+
+<br>
+<br>
+
+## Run locally
 
 Download this repository to your local computer
 

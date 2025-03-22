@@ -2,26 +2,26 @@
 ### Description
 <img src="/hiker_identify.gif" width=600>
 
+### Intro
 This python code (yolo_drone_slice.ipynb) is meant to detect objects in drone-based mp4 video using the YOLO object detection vision model. Users supply an aerial mp4 video and receive an output mp4 with bounding box prediction embedded (per frame) throughout the video. 
 
-### Task
-Object detection with bounding boxes
+This implementation partitions the frame into chips (aka slices) sized 640x640px and predicts across each chip. This ensures high-resolution prediction across the whole image. Good for detecting small objects across large formats like 4k video. 
+
 
 ### Object Classes
 The model can identity 12 object classes: 0 = light vehicle; 1 = person; 2 = building; 3 = Utility pole; 4 = boat; 5 = bike; 6 = container; 7 = truck; 8 = gastank; 10 = digger (construction equipment); 11 = solar panels; 12 = bus.
 
-### Fine-tuned Model 
-The model used is the [YOLOv8 model](https://yolov8.com/) that has been fine tuned on the [WALDO dataset](https://huggingface.co/StephanST/WALDO30). 
 
+### Fine-tuned Model Weights
+The [fine-tuned model](https://huggingface.co/StephanST/WALDO30/resolve/main/WALDO30_yolov8m_640x640.pt?download=true) used here is trained from the [YOLOv8 model](https://yolov8.com/) object detection model. It trains and predicts on RGB image size 640x640.  
 
 ### Training Dataset
-The [Waldo](https://huggingface.co/StephanST/WALDO30) daaset is the developers private dataset of synthetic and "augmented" / semi-synthetic data. It is not currently public.
+The [Waldo](https://huggingface.co/StephanST/WALDO30) dataset is the developers private dataset of synthetic and "augmented" / semi-synthetic data. It is not currently public.
 
-This implimentation will take the input video resolution and 'slice' it into smaller image squares (e.g., 640x640 pixels) to do the predictions. Slice is the same thing as crop or tile. 
+ 
 
-User inputs include the video path, the output path, the model to use, the classes to detect, and the confidence threshold.
 
-The model used is the YOLOv8 model that has been fine tuned on the [WALDO dataset](https://huggingface.co/StephanST/WALDO30). The dataset itself is not public, but the weights of this fine tuned model are available on Hugging Face. WALDO has been trained to identify 12 different objects.  
+
 
 The WALDO fine tuned model is available on Hugging Face [here](https://huggingface.co/StephanST/WALDO30/resolve/main/WALDO30_yolov8m_640x640.pt?download=true). Download the `pt` file to your local machine. 
 

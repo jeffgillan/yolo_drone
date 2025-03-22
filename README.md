@@ -46,7 +46,13 @@ Create a new environment with the provided env.yml
 
 Open the file `yolo_drone_slice.ipynb` in VScode or a code editor of your choice that run jupyter.
 
+<br>
+<br>
+
 Select the python kernel to be `yolo_drone_slice`
+
+<br>
+<br>
 
 Having access to a GPU will significantly increase the speed of the predictions.
 

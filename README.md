@@ -19,14 +19,6 @@ The [fine-tuned model](https://huggingface.co/StephanST/WALDO30/resolve/main/WAL
 The [Waldo](https://huggingface.co/StephanST/WALDO30) dataset is the developers private dataset of synthetic and "augmented" / semi-synthetic data. It is not currently public.
 
  
-
-
-
-
-The WALDO fine tuned model is available on Hugging Face [here](https://huggingface.co/StephanST/WALDO30/resolve/main/WALDO30_yolov8m_640x640.pt?download=true). Download the `pt` file to your local machine. 
-
-Having access to a GPU will significantly increase the speed of the predictions.
-
 <br>
 <br>
 
@@ -52,7 +44,9 @@ Create a new environment with the provided env.yml
 <br>
 <br>
 
-Open the file `yolo_drone_slice.ipynb` in VScode 
+Open the file `yolo_drone_slice.ipynb` in VScode or a code editor of your choice that run jupyter.
 
 Select the python kernel to be `yolo_drone_slice`
+
+Having access to a GPU will significantly increase the speed of the predictions.
 

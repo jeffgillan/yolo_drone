@@ -1,5 +1,5 @@
 ## YOLO Object Detection on MP4 Videos
-### Description
+
 <img src="/hiker_identify.gif" width=600>
 
 ### Intro

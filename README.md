@@ -39,6 +39,11 @@ Download this repository to your local computer
 <br>
 <br>
 
+Download the model weights [here on huggingface](https://huggingface.co/StephanST/WALDO30/resolve/main/WALDO30_yolov8m_640x640.pt?download=true).
+
+<br>
+<br>
+
 Create a new environment with the provided env.yml
 
 `conda env create --file yolo_drone_slice_env.yml`

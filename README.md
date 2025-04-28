@@ -25,6 +25,13 @@ The jupyter notebook (yolo_drone_slice.ipynb) also includes code to train(fine-t
 ['LightVehicle', 'Person', 'Building', 'UPole', 'Boat', 'Bike', 'Container', 'Truck', 'Gastank', 'Digger', 'SolarPanels', 'Bus']
 
 <br>
+
+### Example Videos
+[Object detection video 1](https://www.youtube.com/watch?v=n8oDldsIjlM)
+
+[Object detection video 2](https://www.youtube.com/watch?v=BwU3mIttQ7Q)
+
+<br>
 <br>
 
 ## Run locally

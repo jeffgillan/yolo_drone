@@ -36,32 +36,35 @@ The jupyter notebook (yolo_drone_slice.ipynb) also includes code to train(fine-t
 
 ## Run locally
 
-Download this repository to your local computer
+### Download this repository to your local computer
 
 `git clone git@github.com:jeffgillan/yolo_drone.git`
 
 <br>
 <br>
 
-Download the model weights [here on huggingface](https://huggingface.co/StephanST/WALDO30/resolve/main/WALDO30_yolov8m_640x640.pt?download=true).
+### Download the model weights [here on huggingface](https://huggingface.co/StephanST/WALDO30/resolve/main/WALDO30_yolov8m_640x640.pt?download=true).
 
 <br>
 <br>
 
-Create a new environment with the provided env.yml
+### Create a new environment with the provided env.yml
+#### For linux
+`conda env create --file yolo_drone_env_linux.yml`
 
-`conda env create --file yolo_drone_slice_env.yml`
+#### For arm64/Apple Silicon
+`conda env create --file yolo_drone_env_mac.yml`
 
-
-<br>
-<br>
-
-Open the file `yolo_drone_slice.ipynb` in VScode or a code editor of your choice that run jupyter.
 
 <br>
 <br>
 
-Select the python kernel to be `yolo_drone_slice`
+### Open the file `yolo_drone_slice.ipynb` in VScode or a code editor of your choice that run jupyter.
+
+<br>
+<br>
+
+### Select the python kernel to be `yolo_drone_slice`
 
 <br>
 <br>
